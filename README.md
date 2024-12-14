@@ -1,4 +1,4 @@
-# Food-to-Eat
+# Food-to-Eat-Website
 Developed a food ordering website using HTML, CSS, PHP and MySQL. Features include interactive food menus, user registration and login, database integration and a visually appealing interface.
 
 ![home](https://github.com/user-attachments/assets/6756b137-eaf0-428a-8881-027f47182823)
