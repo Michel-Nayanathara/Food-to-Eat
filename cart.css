@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+section nav .logo img{
+    width: 120px;
+    margin: 20px 0;
+    position: relative;
+    left: -45%;
+    cursor: pointer;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+section nav ul li a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+section nav ul li a.action{
+    color: #facc22;
+}
+
+section nav ul li a:hover{
+    color: #facc22;
+}
+
+section nav .login a{
+    color: #000;
+    text-decoration: none;
+    border: 2px solid #facc22;
+    border-radius: 20px;
+    padding: 7px 20px;
+    transition: 0.3s;
+}
+
+section nav .login a:hover{
+    background: #facc22;
+    color: #fff;
+}
+
+
+.container1{
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.cart-page{
+	margin: 10px auto;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+
+.cart-info{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+th{
+	text-align: left;
+	padding:90px;
+	color:black;
+	background: #facc22;
+	font-weight: normal;
+}
+
+td{
+	padding: 10px 5px;
+}
+td input{
+	width: 50px;
+	height: 30px;
+	padding: 5px;
+}
+td a{
+	color: #facc22;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+td img{
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+}
+
+.total-price{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.total-price table{
+	border-top: 3px solid  #facc22;
+	width: 100%;
+	max-width: 350px;
+}
+
+
+td:last-child{
+	text-align: right;
+}
+
+th:last-child{
+	text-align: right;
+}

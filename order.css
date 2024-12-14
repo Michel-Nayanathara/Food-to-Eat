@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    position: fixed;
+    right: 0;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+nav .logo img{
+    width: 120px;
+    margin: 20px 0;
+    position: relative;
+    left: -45%;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #facc22;
+}
+
+nav ul li a.action{
+    color: #facc22;
+}
+
+nav .login a{
+    color: #000;
+    text-decoration: none;
+    border: 2px solid #facc22;
+    border-radius: 20px;
+    padding: 7px 20px;
+    transition: 0.3s;
+}
+
+nav .login a:hover{
+    background: #facc22;
+    color: #fff;
+}
+
+/*banner*/
+
+.banner_bg{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(banner_bg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner_bg h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    position: relative;
+    top: 50%;
+    color: #fff;
+}
+
+.banner_bg h1 span{
+    color: #facc22;
+    margin-right: 15px;
+}
+
+/*Order*/
+
+.order{
+    width: 100%;
+    height: 100vh;
+    padding: 5px 0;
+}
+
+.order h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.order h1 span{
+    color: #facc22;
+    margin-right: 10px;
+}
+
+.order .order_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 15px;
+}
+
+.order .order_main .order_img img{
+    width: 650px;
+}
+
+.order .order_main .order_form{
+    width: 50%;
+    height: 620px;
+    background: #faf3ce;
+    padding: 15px 20px 0 20px;
+    border-radius: 10px;
+}
+
+.order .order_main .order_form h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.order .order_main .order_form .order_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 20px;
+    margin-bottom: 30px;
+}
+
+.order .order_main .order_form .order_list p{
+    margin-bottom: 5px;
+}
+
+.order .order_main .order_form .order_list input{
+    width: 350px;
+    border: 2px solid #facc22;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    color: #000;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+}
+
+.order .order_main .order_form .order_list textarea{
+    width: 350px;
+    height: 200px;
+    border: 2px solid #facc22;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    color: #000;
+    padding: 10px 5px;
+}
+
+.order .order_main .order_form .order_btn{
+    padding: 10px 20px;
+    border: 2px solid #facc22;
+    text-decoration: none;
+    color: #fff;
+    background: #facc22;
+}
+
+.order .order_main .order_form .order_btn i{
+    margin-right: 8px;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+}
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover{
+    color: #facc22;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+footer .end span{
+    color: #facc22;
+    margin-left: 10px;
+}
+
+.anim{
+    transform: translateY(40px);
+    animation: moveup 0.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
